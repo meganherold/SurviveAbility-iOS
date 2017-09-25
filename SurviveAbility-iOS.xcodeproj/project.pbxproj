@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		448337F61F65D61F001826A2 /* Captain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448337F51F65D61F001826A2 /* Captain.swift */; };
+		448337F81F65D6F0001826A2 /* CaptainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448337F71F65D6F0001826A2 /* CaptainStore.swift */; };
+		448337FA1F65D92C001826A2 /* CaptainsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448337F91F65D92C001826A2 /* CaptainsTableViewController.swift */; };
+		448337FC1F65DA67001826A2 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448337FB1F65DA67001826A2 /* IntroViewController.swift */; };
+		448337FE1F65DE5B001826A2 /* CaptainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448337FD1F65DE5B001826A2 /* CaptainTableViewCell.swift */; };
+		448338031F66003F001826A2 /* CaptainPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448338021F66003F001826A2 /* CaptainPhotoViewController.swift */; };
+		448338051F661A66001826A2 /* NewCaptainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448338041F661A66001826A2 /* NewCaptainViewController.swift */; };
 		44F785771F60E8C20086E9C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F785761F60E8C20086E9C7 /* AppDelegate.swift */; };
 		44F7857C1F60E8C20086E9C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F7857A1F60E8C20086E9C7 /* Main.storyboard */; };
 		44F7857E1F60E8C20086E9C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F7857D1F60E8C20086E9C7 /* Assets.xcassets */; };
@@ -25,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		448337F51F65D61F001826A2 /* Captain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Captain.swift; sourceTree = "<group>"; };
+		448337F71F65D6F0001826A2 /* CaptainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptainStore.swift; sourceTree = "<group>"; };
+		448337F91F65D92C001826A2 /* CaptainsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptainsTableViewController.swift; sourceTree = "<group>"; };
+		448337FB1F65DA67001826A2 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		448337FD1F65DE5B001826A2 /* CaptainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptainTableViewCell.swift; sourceTree = "<group>"; };
+		448338021F66003F001826A2 /* CaptainPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptainPhotoViewController.swift; sourceTree = "<group>"; };
+		448338041F661A66001826A2 /* NewCaptainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCaptainViewController.swift; sourceTree = "<group>"; };
 		44F785731F60E8C20086E9C7 /* SurviveAbility-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SurviveAbility-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F785761F60E8C20086E9C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F7857B1F60E8C20086E9C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +68,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		448337FF1F65DF7D001826A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				448337F91F65D92C001826A2 /* CaptainsTableViewController.swift */,
+				448337FB1F65DA67001826A2 /* IntroViewController.swift */,
+				448338021F66003F001826A2 /* CaptainPhotoViewController.swift */,
+				448338041F661A66001826A2 /* NewCaptainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		448338001F65DF97001826A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				448337F71F65D6F0001826A2 /* CaptainStore.swift */,
+				448337F51F65D61F001826A2 /* Captain.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		448338011F65DFAA001826A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				448337FD1F65DE5B001826A2 /* CaptainTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		44F7856A1F60E8C20086E9C7 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +122,9 @@
 				44F7857D1F60E8C20086E9C7 /* Assets.xcassets */,
 				44F7857F1F60E8C20086E9C7 /* LaunchScreen.storyboard */,
 				44F785821F60E8C20086E9C7 /* Info.plist */,
+				448338011F65DFAA001826A2 /* Views */,
+				448338001F65DF97001826A2 /* Models */,
+				448337FF1F65DF7D001826A2 /* Controllers */,
 			);
 			path = "SurviveAbility-iOS";
 			sourceTree = "<group>";
@@ -143,10 +188,14 @@
 				TargetAttributes = {
 					44F785721F60E8C20086E9C7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VFB953662H;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					44F785861F60E8C20086E9C7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VFB953662H;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 44F785721F60E8C20086E9C7;
 					};
@@ -196,6 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448337FC1F65DA67001826A2 /* IntroViewController.swift in Sources */,
+				448337F81F65D6F0001826A2 /* CaptainStore.swift in Sources */,
+				448338051F661A66001826A2 /* NewCaptainViewController.swift in Sources */,
+				448338031F66003F001826A2 /* CaptainPhotoViewController.swift in Sources */,
+				448337F61F65D61F001826A2 /* Captain.swift in Sources */,
+				448337FA1F65D92C001826A2 /* CaptainsTableViewController.swift in Sources */,
+				448337FE1F65DE5B001826A2 /* CaptainTableViewCell.swift in Sources */,
 				44F785771F60E8C20086E9C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,11 +393,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VFB953662H;
 				INFOPLIST_FILE = "SurviveAbility-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Megan-McPherson.SurviveAbility-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -349,11 +408,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VFB953662H;
 				INFOPLIST_FILE = "SurviveAbility-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Megan-McPherson.SurviveAbility-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -362,11 +424,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VFB953662H;
 				INFOPLIST_FILE = "SurviveAbility-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Megan-McPherson.SurviveAbility-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurviveAbility-iOS.app/SurviveAbility-iOS";
 			};
 			name = Debug;
@@ -376,11 +441,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VFB953662H;
 				INFOPLIST_FILE = "SurviveAbility-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Megan-McPherson.SurviveAbility-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurviveAbility-iOS.app/SurviveAbility-iOS";
 			};
 			name = Release;

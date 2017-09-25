@@ -55,4 +55,31 @@ class CaptainStore {
         }
         return Captain(name: name, photo: nil)
     }
+    
+    func appendNew(captain: Captain) {
+        captain.id = allCaptains.count
+        allCaptains.append(captain)
+        let url = URL(string: "https://survive-ability.herokuapp.com/api/addCaptain")
+        let request = NSMutableURLRequest(url: url!)
+        do {
+            let jsonData = try JSONEncoder().encode(captain)
+            let jsonString = String(data: jsonData, encoding: .utf8)
+            print(jsonString)
+            request.httpBody = jsonData
+        }
+        catch {
+            return
+        }
+        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "PUT"
+        let task = session.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
+            if error != nil {
+                print("Error adding captain.")
+            }
+            else {
+                print("Successfully added Captain.")
+            }
+        }
+        task.resume()
+    }
 }

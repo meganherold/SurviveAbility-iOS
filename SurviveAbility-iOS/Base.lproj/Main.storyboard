@@ -156,7 +156,7 @@
                         <viewControllerLayoutGuide type="top" id="9Nq-08-gnS"/>
                         <viewControllerLayoutGuide type="bottom" id="AZx-aD-5c0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cSj-5m-QWW">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="cSj-5m-QWW">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -201,6 +201,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButtonTouched:" destination="MQp-2v-c66" eventType="touchUpInside" id="CAc-Dc-SEd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96549886465072632" green="0.94744378328323364" blue="0.7970002293586731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -226,7 +229,6 @@
                         <outlet property="borderView" destination="w9u-vB-KcY" id="Nvt-TL-AWI"/>
                         <outlet property="imageView" destination="FVw-Zu-wfo" id="mLI-pB-2xP"/>
                         <outlet property="nameTextField" destination="8MV-Xp-35i" id="vxf-OK-C3V"/>
-                        <outlet property="submitButton" destination="K4K-55-ccZ" id="4rV-Ut-VhO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weK-Sf-YVd" userLabel="First Responder" sceneMemberID="firstResponder"/>

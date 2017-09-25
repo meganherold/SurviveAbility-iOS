@@ -4,8 +4,9 @@ class NewCaptainViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var nameTextField: UITextField!
-    @IBOutlet var submitButton: UIButton!
     @IBOutlet var borderView: UIView!
+    
+    var captainStore: CaptainStore!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,24 +15,14 @@ class NewCaptainViewController: UIViewController {
         borderView.layer.borderWidth = 5
         borderView.layer.borderColor = UIColor(red: 255/255, green: 85/255, blue: 86/255, alpha: 1).cgColor
         self.nameTextField.delegate = self;
-        
-        view.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
     
-    func dismissKeyboard() {
-        self.view.endEditing(true)
+    @IBAction func submitButtonTouched(_ sender: UIButton) {
+        if let name = nameTextField.text {
+            captainStore.appendNew(captain: Captain(name: name, photo: imageView.image))
+        }
+        self.navigationController?.popToRootViewController(animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension NewCaptainViewController: UITextFieldDelegate {
